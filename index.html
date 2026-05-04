@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CNC 313 – Complexe Noreyni Coiffure</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- FLOATING WHATSAPP -->
+<a href="https://wa.me/221777148701" class="whatsapp-float" target="_blank" title="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#hero" onclick="closeMobileMenu()">Accueil</a>
+  <a href="#tarifs" onclick="closeMobileMenu()">Tarifs</a>
+  <a href="#galerie" onclick="closeMobileMenu()">Galerie</a>
+  <a href="#reservation" onclick="closeMobileMenu()">Réservation</a>
+  <a href="#abonnements" onclick="closeMobileMenu()">Abonnements</a>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- NAV -->
+  
+<
+<nav>
+  <a href="#hero" class="nav-logo">
+  <span>Complexe Noreyni Coiffure</span>
+    CNC 313
+  </a>
+  <ul class="nav-links">
+    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#galerie">Galerie</a></li>
+    <li><a href="#reservation">Réservation</a></li>
+    <li><a href="#abonnements">Abonnements</a></li>
+  </ul>
+  <a href="#reservation" class="nav-cta nav-cta-desktop">Prendre RDV</a>
+  <div class="hamburger" onclick="openMobileMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-logo-circle">
+      <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="45" stroke="#C9A84C" stroke-width="1.5" stroke-dasharray="4 3"/>
+        <path d="M30 65 Q40 30 50 50 Q60 70 70 35" stroke="#C9A84C" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+        <circle cx="30" cy="65" r="4" fill="#C9A84C"/>
+        <circle cx="70" cy="35" r="4" fill="#C9A84C"/>
+        <path d="M42 48 L38 60 M58 48 L62 60" stroke="#C9A84C" stroke-width="1.5" stroke-linecap="round"/>
+        <rect x="44" y="38" width="12" height="8" rx="2" stroke="#C9A84C" stroke-width="1.5" fill="none"/>
+        <text x="50" y="82" text-anchor="middle" font-family="serif" font-size="8" fill="#C9A84C" letter-spacing="2">313</text>
+      </svg>
+    </div>
+    <span class="hero-badge">Dakar · Sénégal · Excellence</span>
+    <p class="hero-sub">Complexe Noreyni Coiffure</p>
+    <h1>CNC 313</h1>
+    <p class="hero-desc">L'art de la coiffure masculine au service de votre style. Coupes précises, soins premium, ambiance unique.</p>
+    <div class="hero-btns">
+      <a href="#reservation" class="btn-primary">Réserver maintenant</a>
+      <a href="#tarifs" class="btn-outline">Voir les tarifs</a>
+      <a href="#deplacement" class="btn-primary">deplacement a domocile</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Défiler</div>
+</section>
+
+<!-- TARIFS -->
+<section id="tarifs">
+  <span class="section-label">Nos prestations</span>
+  <h2 class="section-title">Tarifs & Services</h2>
+  <div class="section-line"></div>
+  <div class="tarifs-grid">
+    <div class="tarif-card"><div class="tarif-name">Contour Simple</div><div class="tarif-price">1 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Contour + Teinte Noir + Lavage</div><div class="tarif-price">2 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Dégradé/Tapeur + Teinte Noir</div><div class="tarif-price">3 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Dégradé/Tapeur + Teinte Noir + Lavage</div><div class="tarif-price">4 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Raser Simple + Teinte Noir</div><div class="tarif-price">2 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Raser Simple + Teinte Noir + Lavage</div><div class="tarif-price">3 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Coupe Enfant Raser</div><div class="tarif-price">1 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Coupe Enfant Dégradé/Taper</div><div class="tarif-price">2 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Soin de Visage</div><div class="tarif-price">3 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Défrisage</div><div class="tarif-price">3 000 <span>FCFA</span></div></div>
+    <div class="tarif-card"><div class="tarif-name">Déplacement</div><div class="tarif-price">15 000 <span>FCFA</span></div></div>
+  </div>
+</section>
+
+<!-- GALERIE -->
+
+<section id="galerie">
+  <span class="section-label">Notre travail</span>
+  <h2 class="section-title">Galerie</h2>
+  <div class="section-line"></div>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="PHOTOS/coupe1.jpg" alt="Coupe CNC 313">
+    </div>
+    <div class="gallery-item">
+      <img src="photos/coupe2.jpg" alt="Coupe CNC 313">
+    </div>
+    <div class="gallery-item">
+      <img src="photos/coupe3.jpg" alt="Coupe CNC 313">
+    </div>
+    <div class="gallery-item">
+      <img src="photos/coupe4.jpg" alt="Coupe CNC 313">
+    </div>
+    <div class="gallery-item">
+      <img src="photos/coupe5.jpg" alt="Coupe CNC 313">
+    </div>
+  </div>
+
+  <!-- ===== VIDÉOS ===== -->
+
+  </div>
+</section>
+
+<!-- RÉSERVATION -->
+<section id="reservation">
+  <span class="section-label">Prenez rendez-vous</span>
+  <h2 class="section-title">Réservation</h2>
+  <div class="section-line"></div>
+  <div class="reservation-wrap">
+    <div class="reservation-info">
+      <h3>Informez-nous de votre visite</h3>
+      <div class="info-items">
+        <div class="info-item">
+          <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div class="info-text"><strong>Horaires d'ouverture</strong>Lundi – Samedi : 08h00 – 21h00<br>Dimanche : 09h00 – 18h00</div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div class="info-text"><strong>Localisation</strong>Soprime extension, arret BRT croisement 22, Dakar, Sénégal</div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.77 19.79 19.79 0 01.02 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.72 6.72l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div class="info-text"><strong>Contact WhatsApp</strong>+221 77 714 87 01</div>
+        </div>
+      </div>
+      <div style="background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.2);border-radius:4px;padding:20px;">
+        <div style="font-family:'Barlow Condensed',sans-serif;font-size:.75rem;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;">Note importante</div>
+        <p style="font-size:.85rem;color:var(--gray);line-height:1.7;">Votre réservation sera confirmée par WhatsApp.</p>
+      </div>
+    </div>
+    <div>
+      <div class="form-group"><label>Votre prénom & nom</label><input type="text" id="clientName" placeholder="Ex: Mamadou Diallo"></div>
+      <div class="form-group"><label>Votre numéro WhatsApp</label><input type="tel" id="clientPhone" placeholder="+221 XX XXX XX XX"></div>
+      <div class="form-group">
+        <label>Prestation souhaitée</label>
+        <select id="serviceSelect">
+          <option value="">-- Choisir une prestation --</option>
+          <option value="Contour Simple (1 000 FCFA)">Contour Simple – 1 000 FCFA</option>
+          <option value="Contour + Teinte Noir + Lavage (2 000 FCFA)">Contour + Teinte Noir + Lavage – 2 000 FCFA</option>
+          <option value="Dégradé/Tapeur + Teinte Noir (3 000 FCFA)">Dégradé/Tapeur + Teinte Noir – 3 000 FCFA</option>
+          <option value="Dégradé/Tapeur + Teinte Noir + Lavage (4 000 FCFA)">Dégradé/Tapeur + Teinte Noir + Lavage – 4 000 FCFA</option>
+          <option value="Raser Simple + Teinte Noir (2 000 FCFA)">Raser Simple + Teinte Noir – 2 000 FCFA</option>
+          <option value="Raser Simple + Teinte Noir + Lavage (3 000 FCFA)">Raser Simple + Teinte Noir + Lavage – 3 000 FCFA</option>
+          <option value="Coupe Enfant Raser (1 000 FCFA)">Coupe Enfant Raser – 1 000 FCFA</option>
+          <option value="Coupe Enfant Dégradé/Taper (2 000 FCFA)">Coupe Enfant Dégradé/Taper – 2 000 FCFA</option>
+          <option value="Soin de Visage (3 000 FCFA)">Soin de Visage – 3 000 FCFA</option>
+          <option value="Défrisage (3 000 FCFA)">Défrisage – 3 000 FCFA</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Choisir une date</label>
+        <div class="calendar-grid">
+          <div class="cal-header">
+            <button class="cal-nav" id="prevMonth">‹</button>
+            <span class="cal-month" id="calMonth"></span>
+            <button class="cal-nav" id="nextMonth">›</button>
+          </div>
+          <div class="cal-days-header">
+            <div class="cal-day-name">Dim</div><div class="cal-day-name">Lun</div><div class="cal-day-name">Mar</div>
+            <div class="cal-day-name">Mer</div><div class="cal-day-name">Jeu</div><div class="cal-day-name">Ven</div><div class="cal-day-name">Sam</div>
+          </div>
+          <div class="cal-days" id="calDays"></div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Choisir un horaire</label>
+        <div class="time-slots" id="timeSlots">
+          <div class="time-slot" onclick="selectTime(this)">10:00</div>
+          <div class="time-slot" onclick="selectTime(this)">11:00</div>
+          <div class="time-slot" onclick="selectTime(this)">12:00</div>
+          <div class="time-slot" onclick="selectTime(this)">13:00</div>
+          <div class="time-slot" onclick="selectTime(this)">14:00</div>
+          <div class="time-slot" onclick="selectTime(this)">15:00</div>
+          <div class="time-slot" onclick="selectTime(this)">16:00</div>
+          <div class="time-slot" onclick="selectTime(this)">17:00</div>
+          <div class="time-slot" onclick="selectTime(this)">18:00</div>
+          <div class="time-slot" onclick="selectTime(this)">19:00</div>
+          <div class="time-slot" onclick="selectTime(this)">20:00</div>
+          <div class="time-slot" onclick="selectTime(this)">21:00</div>
+          <div class="time-slot" onclick="selectTime(this)">22:00</div>
+          <div class="time-slot" onclick="selectTime(this)">23:00</div>
+          <div class="time-slot" onclick="selectTime(this)">00:00</div>
+        </div>
+      </div>
+      <button class="btn-whatsapp" onclick="sendToWhatsApp()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Confirmer via WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ABONNEMENTS -->
+<section id="abonnements">
+  <span class="section-label">Fidélité & économies</span>
+  <h2 class="section-title">Abonnements</h2>
+  <div class="section-line"></div>
+  <div class="plans-grid">
+    <div class="plan-card">
+      <div class="plan-name">Abonnement 6 Mois</div>
+      <div class="plan-price"><sup>FCFA</sup>18 000</div>
+      <div class="plan-period">pour 6 mois · 3 000 FCFA/mois</div>
+      <div class="plan-savings">Économisez jusqu'à 15% sur vos prestations</div>
+      <ul class="plan-features">
+        <li>2 coupes par mois incluses (contour)</li>
+        <li>Priorité de réservation</li>
+        <li>10% de réduction sur toutes les prestations</li>
+        <li>1 soin de visage offert</li>
+        <li>Valable 6 mois calendaires</li>
+      </ul>
+      <button class="btn-plan" onclick="subscribeWhatsApp('6 mois', '18 000 FCFA')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Souscrire via WhatsApp
+      </button>
+    </div>
+    <div class="plan-card featured">
+      <div class="plan-badge">⭐ Meilleure offre</div>
+      <div class="plan-name">Abonnement Annuel</div>
+      <div class="plan-price"><sup>FCFA</sup>30 000</div>
+      <div class="plan-period">pour 12 mois · 2 500 FCFA/mois</div>
+      <div class="plan-savings">Économisez jusqu'à 25% sur vos prestations</div>
+      <ul class="plan-features">
+        <li>2 coupes par mois incluses (contour)</li>
+        <li>Priorité absolue de réservation</li>
+        <li>20% de réduction sur toutes les prestations</li>
+        <li>3 soins de visage offerts sur l'année</li>
+        <li>1 défrisage offert</li>
+        <li>Accès client VIP</li>
+        <li>Valable 12 mois calendaires</li>
+      </ul>
+      <button class="btn-plan" onclick="subscribeWhatsApp('annuel (12 mois)', '30 000 FCFA')">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Souscrire via WhatsApp
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name">CNC 313</div>
+      <div class="brand-sub">Complexe Noreyni Coiffure</div>
+      <p>Votre salon de coiffure masculine de confiance à Dakar. Qualité, précision et style.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#tarifs">Nos tarifs</a></li>
+        <li><a href="#galerie">Galerie</a></li>
+        <li><a href="#reservation">Réservation</a></li>
+        <li><a href="#abonnements">Abonnements</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><span>📍 Soprime extension, arret BRT croisement 22, Dakar, Sénégal</span></li>
+        <li><span>📱 +221 77 714 87 01</span></li>
+        <li><span>🕐 Lun–Sam : 10h–01h</span></li>
+        <li><span>🕐 Dim : 11h–00h</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 CNC 313 – Complexe Noreyni Coiffure. Tous droits réservés.</span>
+    <span style="color:var(--gold)">✦ L'art de la coiffure masculine ✦</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
